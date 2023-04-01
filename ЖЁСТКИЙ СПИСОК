@@ -1,0 +1,10 @@
+a = [ 20, 2, 5, 0, 10, 5, ]
+g=1
+while g==1:
+    for i in range(len(a)-1):
+        if (a[i]> a[i+1]):
+            a[i], a[i+1]=a[i+1],a[i]
+    print(a)
+    if all (a[i]<=a[i+1] for i in range (len(a)-1)):
+        g=2
+print(a)
